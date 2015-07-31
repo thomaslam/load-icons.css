@@ -1,12 +1,19 @@
+// Define colors here
+$red: #E50C4E;
+$blue: #104CE5;
+$white: #FFF;
+
+// Choose color for load icons
+$color: $red;
+
 .spin-short-fade {
-  background-color: rgba(0, 0, 0, 0);
-  border: 5px solid rgba(229, 12, 78, 0.9);
-  border-right: 5px solid rgba(0,0,0,0);
-  border-left: 5px solid rgba(0,0,0,0);
+  background-color: $white;
+  border: 5px solid $color;
+  border-right: 5px solid $white;
+  border-left: 5px solid $white;
   border-radius: 50px;
   width: 50px;
   height: 50px;
-  /*box-shadow: 0 0 15px #F40200;*/
   margin: 0 auto;
   animation: spinPulse 0.75s infinite linear;
 }
