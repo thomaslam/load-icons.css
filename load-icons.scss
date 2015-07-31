@@ -1,21 +1,113 @@
-// Define colors here
+/*=====================================
+=            Custom colors            =
+=====================================*/
+/**
+*
+* SET YOUR $YOUR-COLOR
+*
+**/
 $red: #E50C4E;
 $blue: #104CE5;
 $white: #FFF;
+// $your-color: #CCCCCC;
 
-// Choose color for load icons
+/**
+*
+* SET $COLOR TO $YOUR-COLOR, DEFAULT IS $red
+*
+**/
+
 $color: $red;
+// $color: $your-color;
 
-.spin-short-fade {
+/*-----  End of Custom colors  ------*/
+
+
+
+
+
+
+
+
+/*===================================================================
+=            Feel free to customize and recompile to css            =
+===================================================================*/
+
+
+
+
+
+
+
+@mixin animate($style, $duration, $iteration, $delay, $function) {
+  animation: $style $duration $iteration $delay $function;
+}
+
+/*========================================
+=            Spinning circles            =
+========================================*/
+.circle-spin {
   background-color: $white;
   border: 5px solid $color;
-  border-right: 5px solid $white;
-  border-left: 5px solid $white;
   border-radius: 50px;
   width: 50px;
   height: 50px;
   margin: 0 auto;
-  animation: spinPulse 0.75s infinite linear;
+  @include animate(spin, 0.75s, infinite, 0s, linear);
+}
+
+.spin-long {
+  @extend .circle-spin;
+  border-top: 5px solid $white;
+  border-left: 5px solid $white;
+}
+
+.spin-short {
+  @extend .circle-spin;
+  border-right: 5px solid $white;
+  border-left: 5px solid $white;
+}
+
+.pulse {
+  @include animate(spinPulse, 0.75s, infinite, 0s, linear);
+}
+/*-----  End of Spinning circles  ------*/
+
+
+.three-dots {
+  width: 90px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  // display: table;
+
+  .dot {
+    vertical-align: -75%;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: $color;
+    border: 5px solid $color;
+    display: inline-block;
+  }
+
+  .dot:nth-last-child(1) {
+    @include animate(bounce, .6s, infinite, 0.1s, linear);
+  }
+  .dot:nth-last-child(2) {
+    @include animate(bounce, .6s, infinite, 0.2s, linear);
+  }
+  .dot:nth-last-child(3) {
+    @include animate(bounce, .6s, infinite, 0.3s, linear);
+  }
+}
+
+/*=================================
+=            keyframes            =
+=================================*/
+@keyframes spin {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
 }
 
 @keyframes spinPulse {
@@ -23,3 +115,11 @@ $color: $red;
   50% { transform: rotate(100deg); opacity: 1; }
   100% { transform: rotate(-200deg); opacity: 0; };
 }
+
+@keyframes bounce {
+  0% { transform: translate(0,0); }
+  20%, 40% { transform: translate(0,10px); }
+  60%, 80% { transform: translate(0,-10px); }
+  100% { transform: translate(0,0); }
+}
+/*-----  End of keyframes  ------*/

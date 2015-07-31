@@ -1,9 +1,14 @@
+.gitignore
+
 # Local server
 server.js
 
 # Logs
 logs
 *.log
+
+# sourcemap files
+.css.map
 
 # Runtime data
 pids
@@ -13,4 +18,3 @@ pids
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
-

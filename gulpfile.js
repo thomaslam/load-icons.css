@@ -35,7 +35,7 @@ gulp.task('watch-lint', function() {
 
 gulp.task('watch-style', function() {
   gulp.watch('load-icons.scss', ['style']);
-})
+});
 
 gulp.task('default', ['lint', 'watch-lint', 'style', 'watch-style'], function() {
   browserSync.init({
