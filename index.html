@@ -11,35 +11,9 @@
   <!-- Loading icon css -->
   <link rel="stylesheet" href="./load-icons.min.css">
 
-  <style>
-    @import url(http://fonts.googleapis.com/css?family=Raleway:400,600);
+  <!-- Demo css -->
+  <link rel="stylesheet" href="./demo.css">
 
-    h1 {
-      font-family: 'Raleway', Arial, sans-serif;
-      font-weight: 600;
-    }
-
-    p {
-      font-family: 'Raleway', Arial, sans-serif;
-      font-weight: 400;
-      font-size: 20px;
-    }
-
-    .row {
-      margin: 50px auto 50px auto;
-    }
-
-    .footer {
-      display: table;
-      width: 100%;
-      height: 40px;
-      background-color: #eee;
-    }
-
-    .text-muted {
-      margin: 10px 0;
-    }
-  </style>
 </head>
 <body>
 
@@ -70,19 +44,32 @@
       <div class="col-sm-6 col-md-4">
           <div class="spin-long"></div>
           <br>
-          <pre> &lt;div class='spin-long'&gt;&lt;/div&gt; </pre>
+          <div class="highlight">
+            <div class="zero-clipboard"><span class="btn-clipboard" id='test-clipboard'>Copy</span></div>
+            <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spin-long"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span></code></pre>
+          </div>
+
+          <!-- COPY PORTION -->
+          <div class="to-copy"><div class="spin-long"></div></div>
+          <!-- end COPY PORTION -->
       </div>
 
       <div class="col-sm-6 col-md-4">
-          <div class="spin-short "></div>
+          <div class="spin-short"></div>
           <br>
-          <pre> &lt;div class='spin-short'&gt;&lt;/div&gt; </pre>
+          <div class="highlight">
+            <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
+            <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spin-short"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span></code></pre>
+          </div>
       </div>
 
       <div class="col-sm-6 col-md-4">
           <div class="spin-long pulse"></div>
           <br>
-          <pre> &lt;div class='spin-long pulse'&gt;&lt;/div&gt; </pre>
+          <div class="highlight">
+            <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
+            <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spin-long pulse"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span></code></pre>
+          </div>
       </div>
     </div>
 
@@ -96,13 +83,23 @@
             <div class="dot"></div>
           </div>
           <br>
-          <pre>
- &lt;div class='bounce-dots'&gt;
-   &lt;div class='dot'&gt;&lt;/div&gt;
-   &lt;div class='dot'&gt;&lt;/div&gt;
-   &lt;div class='dot'&gt;&lt;/div&gt;
- &lt;/div&gt;            
-          </pre>
+          <div class="highlight">
+            <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
+            <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bounce-dots"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+          </div>
+          
+          <!-- COPY PORTION -->
+          <div class="to-copy"><div class="bounce-dots">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div></div>
+          <!-- end COPY PORTION -->
+          
       </div>
 
       <div class="col-sm-6 col-md-4">
@@ -112,13 +109,14 @@
             <div class="dot"></div>
           </div>
           <br>
-          <pre>
- &lt;div class='pulse-dots'&gt;
-   &lt;div class='dot'&gt;&lt;/div&gt;
-   &lt;div class='dot'&gt;&lt;/div&gt;
-   &lt;div class='dot'&gt;&lt;/div&gt;
- &lt;/div&gt; 
-          </pre>
+          <div class="highlight">
+            <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
+            <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pulse-dots"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+          </div>
       </div>
 
       <div class="col-sm-6 col-md-4">
@@ -128,13 +126,14 @@
             <div class="dot"></div>
           </div>
           <br>
-          <pre>
- &lt;div class='fade-dots'&gt;
-   &lt;div class='dot'&gt;&lt;/div&gt;
-   &lt;div class='dot'&gt;&lt;/div&gt;
-   &lt;div class='dot'&gt;&lt;/div&gt;
- &lt;/div&gt;
-          </pre>
+          <div class="highlight">
+            <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
+            <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fade-dots"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dot"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+          </div>
       </div>
     </div>
 
@@ -150,15 +149,16 @@
             <div class="rect"></div>
           </div>
           <br>
-          <pre>
- &lt;div class='wave-rects'&gt;
-   &lt;div class='rect'&gt;&lt;/div&gt;
-   &lt;div class='rect'&gt;&lt;/div&gt;
-   &lt;div class='rect'&gt;&lt;/div&gt;
-   &lt;div class='rect'&gt;&lt;/div&gt;
-   &lt;div class='rect'&gt;&lt;/div&gt;
- &lt;/div&gt;
-          </pre>
+          <div class="highlight">
+            <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
+            <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"wave-rects"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+          </div>
       </div>
 
       <div class="col-sm-6 col-md-4">
@@ -170,21 +170,37 @@
             <div class="rect"></div>
           </div>
           <br>
-          <pre>
- &lt;div class='center-out-rects'&gt;
-   &lt;div class='rect'&gt;&lt;/div&gt;
-   &lt;div class='rect'&gt;&lt;/div&gt;
-   &lt;div class='rect'&gt;&lt;/div&gt;
-   &lt;div class='rect'&gt;&lt;/div&gt;
-   &lt;div class='rect'&gt;&lt;/div&gt;
- &lt;/div&gt;
-          </pre>
+          <div class="highlight">
+            <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
+            <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"center-out-rects"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+          </div>
       </div>
 
       <div class="col-sm-6 col-md-4">
-          <div class="spin-short "></div>
+          <div class="fade-rects">
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+          </div>
           <br>
-          <pre> &lt;div&gt;&lt;/div&gt; </pre>
+          <div class="highlight">
+            <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
+            <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fade-rects"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rect"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+          </div>
       </div>
     </div> <!-- end of ICONS -->
 
@@ -200,4 +216,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src='./zeroclipboard/jquery.zclip.js'></script>
+  <script src='./demo.js'></script>
 </body>
