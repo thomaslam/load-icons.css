@@ -87,64 +87,8 @@ pre code {
   display: none;
 }
 
-/* Add this attribute to the element that needs a tooltip */
-/*[data-tooltip] {
-  z-index: 9999;
-  cursor: pointer;
-}
-
-/* Hide the tooltip content by default */
-/*.btn-clipboard:before,
-.btn-clipboard:after {
-  visibility: hidden;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  pointer-events: none;
-}*/
-
-/* Position tooltip above the element */
-/*.btn-clipboard:before {
-  position: absolute;
-  bottom: 150%;
-  left: 50%;
-  margin-bottom: 5px;
-  margin-left: -80px;
-  padding: 4px;
-  width: 100px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #000;
-  background-color: hsla(0, 0%, 20%, 0.9);
-  color: #fff;
-  content: 'Copy to clipboard';
+.alert {
+  padding: 5px 35px;
   text-align: center;
-  font-size: 12px;
-  line-height: 1.2;
-}*/
-
-/* Triangle hack to make tooltip look like a speech bubble */
-/*.btn-clipboard:after {
-  position: absolute;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -5px;
-  width: 0;
-  border-top: 5px solid #000;
-  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  content: " ";
-  font-size: 0;
-  line-height: 0;
-}*/
-
-/* Show tooltip content on hover */
-/*.btn-clipboard:hover:before,
-.btn-clipboard:hover:after {
-  visibility: visible;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}*/
+  display: none;
+}

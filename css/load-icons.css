@@ -383,47 +383,47 @@
 * MIXINS
 *
 **/
-.grid, .color-grid, .pulse-grid {
+.grid, .color-grid, .pulse-grid, .color-pulse-grid {
   width: 80px;
   height: 80px;
   margin: 0 auto;
   text-align: center; }
 
 .color-grid div:nth-child(1) {
-  -webkit-animation: changeColor 1.12s infinite 0.79s ease-in-out;
-          animation: changeColor 1.12s infinite 0.79s ease-in-out; }
+  -webkit-animation: changeColor 0.89s infinite 0.72s ease-in-out;
+          animation: changeColor 0.89s infinite 0.72s ease-in-out; }
 
 .color-grid div:nth-child(2) {
-  -webkit-animation: changeColor 1.49s infinite 0.78s ease-in-out;
-          animation: changeColor 1.49s infinite 0.78s ease-in-out; }
+  -webkit-animation: changeColor 1.05s infinite 0.55s ease-in-out;
+          animation: changeColor 1.05s infinite 0.55s ease-in-out; }
 
 .color-grid div:nth-child(3) {
-  -webkit-animation: changeColor 1.6s infinite 0.67s ease-in-out;
-          animation: changeColor 1.6s infinite 0.67s ease-in-out; }
+  -webkit-animation: changeColor 1.35s infinite 0.19s ease-in-out;
+          animation: changeColor 1.35s infinite 0.19s ease-in-out; }
 
 .color-grid div:nth-child(4) {
-  -webkit-animation: changeColor 0.63s infinite 0.39s ease-in-out;
-          animation: changeColor 0.63s infinite 0.39s ease-in-out; }
+  -webkit-animation: changeColor 0.91s infinite 0.05s ease-in-out;
+          animation: changeColor 0.91s infinite 0.05s ease-in-out; }
 
 .color-grid div:nth-child(5) {
-  -webkit-animation: changeColor 1.21s infinite 0.02s ease-in-out;
-          animation: changeColor 1.21s infinite 0.02s ease-in-out; }
+  -webkit-animation: changeColor 0.7s infinite 0.44s ease-in-out;
+          animation: changeColor 0.7s infinite 0.44s ease-in-out; }
 
 .color-grid div:nth-child(6) {
-  -webkit-animation: changeColor 1.11s infinite 0.73s ease-in-out;
-          animation: changeColor 1.11s infinite 0.73s ease-in-out; }
+  -webkit-animation: changeColor 1.4s infinite 0.32s ease-in-out;
+          animation: changeColor 1.4s infinite 0.32s ease-in-out; }
 
 .color-grid div:nth-child(7) {
-  -webkit-animation: changeColor 0.74s infinite 0.22s ease-in-out;
-          animation: changeColor 0.74s infinite 0.22s ease-in-out; }
+  -webkit-animation: changeColor 0.72s infinite 0.72s ease-in-out;
+          animation: changeColor 0.72s infinite 0.72s ease-in-out; }
 
 .color-grid div:nth-child(8) {
-  -webkit-animation: changeColor 1.43s infinite 0.54s ease-in-out;
-          animation: changeColor 1.43s infinite 0.54s ease-in-out; }
+  -webkit-animation: changeColor 0.64s infinite 0.4s ease-in-out;
+          animation: changeColor 0.64s infinite 0.4s ease-in-out; }
 
 .color-grid div:nth-child(9) {
-  -webkit-animation: changeColor 0.98s infinite 0.18s ease-in-out;
-          animation: changeColor 0.98s infinite 0.18s ease-in-out; }
+  -webkit-animation: changeColor 1.11s infinite 0.4s ease-in-out;
+          animation: changeColor 1.11s infinite 0.4s ease-in-out; }
 
 .color-grid div {
   background-color: #E50C4E;
@@ -472,6 +472,50 @@
           animation: scaleDelay 1.3s infinite 0.4s ease-in-out; }
 
 .pulse-grid div {
+  background-color: #E50C4E;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  float: center;
+  border-radius: 100%; }
+
+.color-pulse-grid div:nth-child(1) {
+  -webkit-animation: changeColor 1.3s infinite 0s ease-in-out;
+          animation: changeColor 1.3s infinite 0s ease-in-out; }
+
+.color-pulse-grid div:nth-child(2) {
+  -webkit-animation: changeColor 1.3s infinite 0.1s ease-in-out;
+          animation: changeColor 1.3s infinite 0.1s ease-in-out; }
+
+.color-pulse-grid div:nth-child(3) {
+  -webkit-animation: changeColor 1.3s infinite 0.2s ease-in-out;
+          animation: changeColor 1.3s infinite 0.2s ease-in-out; }
+
+.color-pulse-grid div:nth-child(4) {
+  -webkit-animation: changeColor 1.3s infinite 0.1s ease-in-out;
+          animation: changeColor 1.3s infinite 0.1s ease-in-out; }
+
+.color-pulse-grid div:nth-child(5) {
+  -webkit-animation: changeColor 1.3s infinite 0.2s ease-in-out;
+          animation: changeColor 1.3s infinite 0.2s ease-in-out; }
+
+.color-pulse-grid div:nth-child(6) {
+  -webkit-animation: changeColor 1.3s infinite 0.3s ease-in-out;
+          animation: changeColor 1.3s infinite 0.3s ease-in-out; }
+
+.color-pulse-grid div:nth-child(7) {
+  -webkit-animation: changeColor 1.3s infinite 0.2s ease-in-out;
+          animation: changeColor 1.3s infinite 0.2s ease-in-out; }
+
+.color-pulse-grid div:nth-child(8) {
+  -webkit-animation: changeColor 1.3s infinite 0.3s ease-in-out;
+          animation: changeColor 1.3s infinite 0.3s ease-in-out; }
+
+.color-pulse-grid div:nth-child(9) {
+  -webkit-animation: changeColor 1.3s infinite 0.4s ease-in-out;
+          animation: changeColor 1.3s infinite 0.4s ease-in-out; }
+
+.color-pulse-grid div {
   background-color: #E50C4E;
   width: 20px;
   height: 20px;

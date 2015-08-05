@@ -11,7 +11,7 @@
   }
 }
 
-@mixin pulseGridAnimate($n: 9) {
+@mixin pulseGridAnimate($style, $n: 9) {
   @for $i from 1 through $n {
     div:nth-child(#{$i}) {
       $delay: 0.4s;
@@ -26,7 +26,7 @@
         $delay: 0.3s;
       }
 
-      @include animate(scaleDelay, 1.3s, infinite, $delay, ease-in-out);
+      @include animate($style, 1.3s, infinite, $delay, ease-in-out);
     }
   }
 }
@@ -55,7 +55,21 @@
 
 .pulse-grid {
   @extend .grid;
-  @include pulseGridAnimate();
+  @include pulseGridAnimate(scaleDelay);
+
+  div {
+    background-color: $color;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    float: center;
+    border-radius: 100%;
+  }
+}
+
+.color-pulse-grid {
+  @extend .grid;
+  @include pulseGridAnimate(changeColor);
 
   div {
     background-color: $color;
