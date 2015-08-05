@@ -1,0 +1,32 @@
+/**
+*
+* SET YOUR $YOUR-COLOR
+*
+**/
+$red: #E50C4E;
+$blue: #104CE5;
+$white: #FFF;
+$green: #64FD39;
+$orange: #FD7703;
+
+// $your-color: #CCCCCC;
+
+/**
+*
+* SET $COLOR TO $YOUR-COLOR, DEFAULT IS $red
+*
+**/
+
+$color: $red;
+// $color: $your-color;
+
+/**
+*
+* MIXINS
+*
+**/
+
+@mixin animate($style, $duration, $iteration, $delay, $function) {
+  animation: $style $duration $iteration $delay $function;
+}
+

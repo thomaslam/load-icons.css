@@ -1,0 +1,42 @@
+@import '../shared';
+
+/*========================================
+=            Spinning circles            =
+========================================*/
+.circle-spin {
+  background-color: $white;
+  border: 5px solid $color;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  @include animate(spin, 0.75s, infinite, 0s, linear);
+}
+
+.spin-long {
+  @extend .circle-spin;
+  border-top: 5px solid $white;
+  border-left: 5px solid $white;
+}
+
+.spin-short {
+  @extend .circle-spin;
+  border-right: 5px solid $white;
+  border-left: 5px solid $white;
+}
+
+.pulse {
+  @include animate(spinPulse, 0.75s, infinite, 0s, linear);
+}
+/*-----  End of Spinning circles  ------*/
+
+@keyframes spin {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+
+@keyframes spinPulse {
+  0% { transform: rotate(160deg); opacity: 0; }
+  50% { transform: rotate(100deg); opacity: 1; }
+  100% { transform: rotate(-200deg); opacity: 0; };
+}

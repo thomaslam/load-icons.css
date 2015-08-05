@@ -1,0 +1,63 @@
+@import '../shared';
+
+@mixin dotAnimate($style) {
+  .dot:nth-last-child(1) {
+    @include animate($style, .6s, infinite, 0.1s, linear);
+  }
+  .dot:nth-last-child(2) {
+    @include animate($style, .6s, infinite, 0.2s, linear);
+  }
+  .dot:nth-last-child(3) {
+    @include animate($style, .6s, infinite, 0.3s, linear);
+  }
+}
+
+.dots {
+  width: 90px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dot {
+  vertical-align: -75%;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: $color;
+  border: 5px solid $color;
+  display: inline-block;
+}
+
+.bounce-dots {
+  @extend .dots;
+  @include dotAnimate(bounce);
+}
+
+.pulse-dots {
+  @extend .dots;
+  @include dotAnimate(dotPulse);
+}
+
+.fade-dots {
+  @extend .dots;
+  @include dotAnimate(dotFade);
+}
+
+@keyframes bounce {
+  0% { transform: translate(0,0); }
+  20%, 40% { transform: translate(0,10px); }
+  60%, 80% { transform: translate(0,-10px); }
+  100% { transform: translate(0,0); }
+}
+
+@keyframes dotPulse {
+  0% { transform: scale(1); }
+  45% { transform: scale(0.1); }
+  80% { transform: scale(1); }
+}
+
+@keyframes dotFade {
+  50% { opacity: 0.2; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}

@@ -1,0 +1,524 @@
+/**
+*
+* SET YOUR $YOUR-COLOR
+*
+**/
+/**
+*
+* SET $COLOR TO $YOUR-COLOR, DEFAULT IS $red
+*
+**/
+/**
+*
+* MIXINS
+*
+**/
+/**
+*
+* SET YOUR $YOUR-COLOR
+*
+**/
+/**
+*
+* SET $COLOR TO $YOUR-COLOR, DEFAULT IS $red
+*
+**/
+/**
+*
+* MIXINS
+*
+**/
+/*========================================
+=            Spinning circles            =
+========================================*/
+.circle-spin, .spin-long, .spin-short {
+  background-color: #FFF;
+  border: 5px solid #E50C4E;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  -webkit-animation: spin 0.75s infinite 0s linear;
+          animation: spin 0.75s infinite 0s linear; }
+
+.spin-long {
+  border-top: 5px solid #FFF;
+  border-left: 5px solid #FFF; }
+
+.spin-short {
+  border-right: 5px solid #FFF;
+  border-left: 5px solid #FFF; }
+
+.pulse {
+  -webkit-animation: spinPulse 0.75s infinite 0s linear;
+          animation: spinPulse 0.75s infinite 0s linear; }
+
+/*-----  End of Spinning circles  ------*/
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes spinPulse {
+  0% {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+    opacity: 0; }
+  50% {
+    -webkit-transform: rotate(100deg);
+            transform: rotate(100deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(-200deg);
+            transform: rotate(-200deg);
+    opacity: 0; } }
+
+@keyframes spinPulse {
+  0% {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+    opacity: 0; }
+  50% {
+    -webkit-transform: rotate(100deg);
+            transform: rotate(100deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(-200deg);
+            transform: rotate(-200deg);
+    opacity: 0; } }
+
+/**
+*
+* SET YOUR $YOUR-COLOR
+*
+**/
+/**
+*
+* SET $COLOR TO $YOUR-COLOR, DEFAULT IS $red
+*
+**/
+/**
+*
+* MIXINS
+*
+**/
+.dots, .bounce-dots, .pulse-dots, .fade-dots, .rects, .wave-rects, .center-out-rects, .fade-rects {
+  width: 90px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center; }
+
+.dot {
+  vertical-align: -75%;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #E50C4E;
+  border: 5px solid #E50C4E;
+  display: inline-block; }
+
+.bounce-dots .dot:nth-last-child(1) {
+  -webkit-animation: bounce 0.6s infinite 0.1s linear;
+          animation: bounce 0.6s infinite 0.1s linear; }
+
+.bounce-dots .dot:nth-last-child(2) {
+  -webkit-animation: bounce 0.6s infinite 0.2s linear;
+          animation: bounce 0.6s infinite 0.2s linear; }
+
+.bounce-dots .dot:nth-last-child(3) {
+  -webkit-animation: bounce 0.6s infinite 0.3s linear;
+          animation: bounce 0.6s infinite 0.3s linear; }
+
+.pulse-dots .dot:nth-last-child(1) {
+  -webkit-animation: dotPulse 0.6s infinite 0.1s linear;
+          animation: dotPulse 0.6s infinite 0.1s linear; }
+
+.pulse-dots .dot:nth-last-child(2) {
+  -webkit-animation: dotPulse 0.6s infinite 0.2s linear;
+          animation: dotPulse 0.6s infinite 0.2s linear; }
+
+.pulse-dots .dot:nth-last-child(3) {
+  -webkit-animation: dotPulse 0.6s infinite 0.3s linear;
+          animation: dotPulse 0.6s infinite 0.3s linear; }
+
+.fade-dots .dot:nth-last-child(1) {
+  -webkit-animation: dotFade 0.6s infinite 0.1s linear;
+          animation: dotFade 0.6s infinite 0.1s linear; }
+
+.fade-dots .dot:nth-last-child(2) {
+  -webkit-animation: dotFade 0.6s infinite 0.2s linear;
+          animation: dotFade 0.6s infinite 0.2s linear; }
+
+.fade-dots .dot:nth-last-child(3) {
+  -webkit-animation: dotFade 0.6s infinite 0.3s linear;
+          animation: dotFade 0.6s infinite 0.3s linear; }
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  20%, 40% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  60%, 80% {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  20%, 40% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  60%, 80% {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@-webkit-keyframes dotPulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  45% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1); }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes dotPulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  45% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1); }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes dotFade {
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes dotFade {
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+/**
+*
+* SET YOUR $YOUR-COLOR
+*
+**/
+/**
+*
+* SET $COLOR TO $YOUR-COLOR, DEFAULT IS $red
+*
+**/
+/**
+*
+* MIXINS
+*
+**/
+.rect {
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  background-color: #E50C4E;
+  border-radius: 5px; }
+
+.wave-rects .rect:nth-last-child(1) {
+  -webkit-animation: rectScale 1.2s infinite 0s ease-in-out;
+          animation: rectScale 1.2s infinite 0s ease-in-out; }
+
+.wave-rects .rect:nth-last-child(2) {
+  -webkit-animation: rectScale 1.2s infinite -1.1s ease-in-out;
+          animation: rectScale 1.2s infinite -1.1s ease-in-out; }
+
+.wave-rects .rect:nth-last-child(3) {
+  -webkit-animation: rectScale 1.2s infinite -1s ease-in-out;
+          animation: rectScale 1.2s infinite -1s ease-in-out; }
+
+.wave-rects .rect:nth-last-child(4) {
+  -webkit-animation: rectScale 1.2s infinite -0.9s ease-in-out;
+          animation: rectScale 1.2s infinite -0.9s ease-in-out; }
+
+.wave-rects .rect:nth-last-child(5) {
+  -webkit-animation: rectScale 1.2s infinite -0.8s ease-in-out;
+          animation: rectScale 1.2s infinite -0.8s ease-in-out; }
+
+.center-out-rects .rect:nth-last-child(1) {
+  -webkit-animation: rectScale 1.2s infinite -0.2s ease-in-out;
+          animation: rectScale 1.2s infinite -0.2s ease-in-out; }
+
+.center-out-rects .rect:nth-last-child(2) {
+  -webkit-animation: rectScale 1.2s infinite -0.4s ease-in-out;
+          animation: rectScale 1.2s infinite -0.4s ease-in-out; }
+
+.center-out-rects .rect:nth-last-child(3) {
+  -webkit-animation: rectScale 1.2s infinite -0.6s ease-in-out;
+          animation: rectScale 1.2s infinite -0.6s ease-in-out; }
+
+.center-out-rects .rect:nth-last-child(4) {
+  -webkit-animation: rectScale 1.2s infinite -0.4s ease-in-out;
+          animation: rectScale 1.2s infinite -0.4s ease-in-out; }
+
+.center-out-rects .rect:nth-last-child(5) {
+  -webkit-animation: rectScale 1.2s infinite -0.2s ease-in-out;
+          animation: rectScale 1.2s infinite -0.2s ease-in-out; }
+
+.fade-rects .rect {
+  vertical-align: -75%; }
+
+.fade-rects .rect:nth-last-child(1) {
+  -webkit-animation: rectFade 1.2s infinite 0s ease-in-out;
+          animation: rectFade 1.2s infinite 0s ease-in-out; }
+
+.fade-rects .rect:nth-last-child(2) {
+  -webkit-animation: rectFade 1.2s infinite -1.1s ease-in-out;
+          animation: rectFade 1.2s infinite -1.1s ease-in-out; }
+
+.fade-rects .rect:nth-last-child(3) {
+  -webkit-animation: rectFade 1.2s infinite -1s ease-in-out;
+          animation: rectFade 1.2s infinite -1s ease-in-out; }
+
+.fade-rects .rect:nth-last-child(4) {
+  -webkit-animation: rectFade 1.2s infinite -0.9s ease-in-out;
+          animation: rectFade 1.2s infinite -0.9s ease-in-out; }
+
+.fade-rects .rect:nth-last-child(5) {
+  -webkit-animation: rectFade 1.2s infinite -0.8s ease-in-out;
+          animation: rectFade 1.2s infinite -0.8s ease-in-out; }
+
+@-webkit-keyframes rectScale {
+  0% {
+    -webkit-transform: scaley(1);
+            transform: scaley(1); }
+  50% {
+    -webkit-transform: scaley(0.4);
+            transform: scaley(0.4); }
+  100% {
+    -webkit-transform: scaley(1);
+            transform: scaley(1); } }
+
+@keyframes rectScale {
+  0% {
+    -webkit-transform: scaley(1);
+            transform: scaley(1); }
+  50% {
+    -webkit-transform: scaley(0.4);
+            transform: scaley(0.4); }
+  100% {
+    -webkit-transform: scaley(1);
+            transform: scaley(1); } }
+
+@-webkit-keyframes rectFade {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaley(0.4);
+            transform: scaley(0.4); }
+  50% {
+    opacity: 0;
+    -webkit-transform: scaley(0.4);
+            transform: scaley(0.4); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaley(0.4);
+            transform: scaley(0.4); } }
+
+@keyframes rectFade {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaley(0.4);
+            transform: scaley(0.4); }
+  50% {
+    opacity: 0;
+    -webkit-transform: scaley(0.4);
+            transform: scaley(0.4); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaley(0.4);
+            transform: scaley(0.4); } }
+
+/**
+*
+* SET YOUR $YOUR-COLOR
+*
+**/
+/**
+*
+* SET $COLOR TO $YOUR-COLOR, DEFAULT IS $red
+*
+**/
+/**
+*
+* MIXINS
+*
+**/
+.grid, .color-grid, .pulse-grid {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  text-align: center; }
+
+.color-grid div:nth-child(1) {
+  -webkit-animation: changeColor 1.12s infinite 0.79s ease-in-out;
+          animation: changeColor 1.12s infinite 0.79s ease-in-out; }
+
+.color-grid div:nth-child(2) {
+  -webkit-animation: changeColor 1.49s infinite 0.78s ease-in-out;
+          animation: changeColor 1.49s infinite 0.78s ease-in-out; }
+
+.color-grid div:nth-child(3) {
+  -webkit-animation: changeColor 1.6s infinite 0.67s ease-in-out;
+          animation: changeColor 1.6s infinite 0.67s ease-in-out; }
+
+.color-grid div:nth-child(4) {
+  -webkit-animation: changeColor 0.63s infinite 0.39s ease-in-out;
+          animation: changeColor 0.63s infinite 0.39s ease-in-out; }
+
+.color-grid div:nth-child(5) {
+  -webkit-animation: changeColor 1.21s infinite 0.02s ease-in-out;
+          animation: changeColor 1.21s infinite 0.02s ease-in-out; }
+
+.color-grid div:nth-child(6) {
+  -webkit-animation: changeColor 1.11s infinite 0.73s ease-in-out;
+          animation: changeColor 1.11s infinite 0.73s ease-in-out; }
+
+.color-grid div:nth-child(7) {
+  -webkit-animation: changeColor 0.74s infinite 0.22s ease-in-out;
+          animation: changeColor 0.74s infinite 0.22s ease-in-out; }
+
+.color-grid div:nth-child(8) {
+  -webkit-animation: changeColor 1.43s infinite 0.54s ease-in-out;
+          animation: changeColor 1.43s infinite 0.54s ease-in-out; }
+
+.color-grid div:nth-child(9) {
+  -webkit-animation: changeColor 0.98s infinite 0.18s ease-in-out;
+          animation: changeColor 0.98s infinite 0.18s ease-in-out; }
+
+.color-grid div {
+  background-color: #E50C4E;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  float: center;
+  border-radius: 100%;
+  -webkit-transition: background-color 1 ease;
+          transition: background-color 1 ease; }
+
+.pulse-grid div:nth-child(1) {
+  -webkit-animation: scaleDelay 1.3s infinite 0s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0s ease-in-out; }
+
+.pulse-grid div:nth-child(2) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.1s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.1s ease-in-out; }
+
+.pulse-grid div:nth-child(3) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.2s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.2s ease-in-out; }
+
+.pulse-grid div:nth-child(4) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.1s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.1s ease-in-out; }
+
+.pulse-grid div:nth-child(5) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.2s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.2s ease-in-out; }
+
+.pulse-grid div:nth-child(6) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.3s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.3s ease-in-out; }
+
+.pulse-grid div:nth-child(7) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.2s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.2s ease-in-out; }
+
+.pulse-grid div:nth-child(8) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.3s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.3s ease-in-out; }
+
+.pulse-grid div:nth-child(9) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.4s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.4s ease-in-out; }
+
+.pulse-grid div {
+  background-color: #E50C4E;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  float: center;
+  border-radius: 100%; }
+
+@-webkit-keyframes changeColor {
+  0% {
+    background-color: #E50C4E; }
+  20% {
+    background-color: #104CE5; }
+  40% {
+    background-color: #FFF; }
+  60% {
+    background-color: #64FD39; }
+  80% {
+    background-color: #FD7703; }
+  100% {
+    background-color: #E50C4E; } }
+
+@keyframes changeColor {
+  0% {
+    background-color: #E50C4E; }
+  20% {
+    background-color: #104CE5; }
+  40% {
+    background-color: #FFF; }
+  60% {
+    background-color: #64FD39; }
+  80% {
+    background-color: #FD7703; }
+  100% {
+    background-color: #E50C4E; } }
+
+@-webkit-keyframes scaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1); }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); } }
+
+@keyframes scaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1); }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); } }
