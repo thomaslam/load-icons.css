@@ -1,5 +1,13 @@
 @import '../shared';
 
+$color-gr-1: lighten($color, 25%);
+$color-gr-2-4: lighten($color, 10%);
+$color-gr-3-5-7: $color;
+$color-gr-6-8: darken($color, 10%);
+$color-gr-9: darken($color, 25%);
+
+$current-color: $color-gr-1;
+
 @mixin colorGridAnimate($style, $n: 9) {
   @for $i from 1 through $n {
     $random-delay: ((random(100) / 100) - 0.2) + s;
@@ -36,11 +44,6 @@
   height: 80px;
   margin: 0 auto;
   text-align: center;
-}
-
-.color-grid {
-  @extend .grid;
-  @include colorGridAnimate(changeColor);
 
   div {
     background-color: $color;
@@ -50,44 +53,70 @@
     float: center;
     border-radius: 100%;
     transition: background-color 1 ease;
+
+    &:nth-child(1) { background-color: lighten($color, 25%); }
+    &:nth-child(2), &:nth-child(4) { background-color: lighten($color, 10%); }
+    &:nth-child(6), &:nth-child(8) { background-color: darken($color, 10%); }
+    &:nth-child(9) { background-color: darken($color, 25%); }
   }
+}
+
+.random-grid {
+  @extend .grid;
+  @include colorGridAnimate(changeColor);
+
+  // div {
+  //   background-color: $color;
+  //   width: 20px;
+  //   height: 20px;
+  //   display: inline-block;
+  //   float: center;
+  //   border-radius: 100%;
+  //   transition: background-color 1 ease;
+
+  //   &:nth-child(1) { background-color: lighten($color, 25%); }
+  //   &:nth-child(2), &:nth-child(4) { background-color: lighten($color, 10%); }
+  //   &:nth-child(6), &:nth-child(8) { background-color: darken($color, 10%); }
+  //   &:nth-child(9) { background-color: darken($color, 25%); }
+  // }
 }
 
 .pulse-grid {
   @extend .grid;
   @include pulseGridAnimate(scaleDelay);
 
-  div {
-    background-color: $color;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    float: center;
-    border-radius: 100%;
-  }
+  // div {
+  //   background-color: $color-gr-3-5-7; // 3 5 7 position color
+  //   width: 20px;
+  //   height: 20px;
+  //   display: inline-block;
+  //   float: center;
+  //   border-radius: 100%;
+
+  //   &:nth-child(1) { background-color: $color-gr-1; }
+  //   &:nth-child(2), &:nth-child(4) { background-color: $color-gr-2-4; }
+  //   &:nth-child(6), &:nth-child(8) { background-color: $color-gr-6-8; }
+  //   &:nth-child(9) { background-color: $color-gr-9; }
+  // }
 }
 
 .color-pulse-grid {
   @extend .grid;
   @include pulseGridAnimate(changeColor);
-
-  div {
-    background-color: $color;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    float: center;
-    border-radius: 100%;
-  }
 }
 
 @keyframes changeColor {
   0% { background-color: $red; }
-  20% { background-color: $blue; }
-  40% { background-color: $white; }
-  60% { background-color: $green; }
-  80% { background-color: $orange; }
+  50% { background-color: $white; }
   100% { background-color: $red; }
+  // 12% { background-color: $orange; }
+  // 24% { background-color: $yellow; }
+  // 36% { background-color: $green; }
+  // 48% { background-color: $turquoise; }
+  // 60% { background-color: $blue; }
+  // 72% { background-color: $purple; }
+  // 84% { background-color: $pink; }
+  // 96% { background-color: $red; }
 }
 
 @keyframes scaleDelay {

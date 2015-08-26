@@ -1,0 +1,25 @@
+{
+  "name": "load-icons-css",
+  "version": "0.0.0",
+  "homepage": "http://thomaslam.rocks/load-icons",
+  "authors": [
+    "Thomas Lam <tuananhlam95@gmail.com>"
+  ],
+  "description": "a collection of free pure css loading icons",
+  "main": "\"sass/load-icons.scss\"",
+  "keywords": [
+    "\"loading\"",
+    "\"icons\"",
+    "\"css\"",
+    "\"pure\"",
+    "\"css3\""
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
