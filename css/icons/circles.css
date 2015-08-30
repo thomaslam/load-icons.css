@@ -1,0 +1,83 @@
+/**
+*
+* Set $your-color here
+*
+**/
+/**
+*
+* Set $color to $your-color, default is $red
+*
+**/
+/**
+*
+* MIXINS
+*
+**/
+/*========================================
+=            Spinning circles            =
+========================================*/
+.circle-spin, .spin-long, .spin-short {
+  background-color: #FFF;
+  border: 5px solid #E50C4E;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  -webkit-animation: spin 0.75s infinite 0s linear;
+          animation: spin 0.75s infinite 0s linear; }
+
+.spin-long {
+  border-top: 5px solid #FFF;
+  border-left: 5px solid #FFF; }
+
+.spin-short {
+  border-right: 5px solid #FFF;
+  border-left: 5px solid #FFF; }
+
+.pulse {
+  -webkit-animation: spinPulse 0.75s infinite 0s linear;
+          animation: spinPulse 0.75s infinite 0s linear; }
+
+/*-----  End of Spinning circles  ------*/
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes spinPulse {
+  0% {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+    opacity: 0; }
+  50% {
+    -webkit-transform: rotate(100deg);
+            transform: rotate(100deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(-200deg);
+            transform: rotate(-200deg);
+    opacity: 0; } }
+
+@keyframes spinPulse {
+  0% {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+    opacity: 0; }
+  50% {
+    -webkit-transform: rotate(100deg);
+            transform: rotate(100deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(-200deg);
+            transform: rotate(-200deg);
+    opacity: 0; } }

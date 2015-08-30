@@ -21,11 +21,25 @@ gulp.task('sass-compile', function() {
           .pipe(gulp.dest('./css/'));
 });
 
-gulp.task('watch', function() {
-  gulp.watch('./sass/*/*.scss', ['sass-compile']);
+gulp.task('separate-compile', function() {
+  return gulp.src('./sass/icons/*.scss')
+          .pipe(sass().on('error', sass.logError))
+          .pipe(postcss([
+            autoprefixer({
+              browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']           
+            })
+          ]))
+          .pipe(gulp.dest('./css/icons/'))
+          .pipe(minifycss())
+          .pipe(rename({suffix: '.min'}))
+          .pipe(gulp.dest('./css/icons/'))
 });
 
-gulp.task('default', ['sass-compile', 'watch'], function() {
+gulp.task('watch', function() {
+  gulp.watch('./sass/*/*.scss', ['sass-compile', 'separate-compile']);
+});
+
+gulp.task('default', ['sass-compile', 'separate-compile', 'watch'], function() {
   browserSync.init({
     server: {
       baseDir: './'

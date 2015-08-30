@@ -1,0 +1,140 @@
+/**
+*
+* Set $your-color here
+*
+**/
+/**
+*
+* Set $color to $your-color, default is $red
+*
+**/
+/**
+*
+* MIXINS
+*
+**/
+.rects, .wave-rects, .center-out-rects, .fade-rects {
+  width: 90px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center; }
+
+.rect {
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  background-color: #E50C4E;
+  border-radius: 5px; }
+
+.wave-rects .rect:nth-last-child(1) {
+  -webkit-animation: rectScale 1.2s infinite 0s ease-in-out;
+          animation: rectScale 1.2s infinite 0s ease-in-out; }
+
+.wave-rects .rect:nth-last-child(2) {
+  -webkit-animation: rectScale 1.2s infinite -1.1s ease-in-out;
+          animation: rectScale 1.2s infinite -1.1s ease-in-out; }
+
+.wave-rects .rect:nth-last-child(3) {
+  -webkit-animation: rectScale 1.2s infinite -1s ease-in-out;
+          animation: rectScale 1.2s infinite -1s ease-in-out; }
+
+.wave-rects .rect:nth-last-child(4) {
+  -webkit-animation: rectScale 1.2s infinite -0.9s ease-in-out;
+          animation: rectScale 1.2s infinite -0.9s ease-in-out; }
+
+.wave-rects .rect:nth-last-child(5) {
+  -webkit-animation: rectScale 1.2s infinite -0.8s ease-in-out;
+          animation: rectScale 1.2s infinite -0.8s ease-in-out; }
+
+.center-out-rects .rect:nth-last-child(1) {
+  -webkit-animation: rectScale 1.2s infinite -0.2s ease-in-out;
+          animation: rectScale 1.2s infinite -0.2s ease-in-out; }
+
+.center-out-rects .rect:nth-last-child(2) {
+  -webkit-animation: rectScale 1.2s infinite -0.4s ease-in-out;
+          animation: rectScale 1.2s infinite -0.4s ease-in-out; }
+
+.center-out-rects .rect:nth-last-child(3) {
+  -webkit-animation: rectScale 1.2s infinite -0.6s ease-in-out;
+          animation: rectScale 1.2s infinite -0.6s ease-in-out; }
+
+.center-out-rects .rect:nth-last-child(4) {
+  -webkit-animation: rectScale 1.2s infinite -0.4s ease-in-out;
+          animation: rectScale 1.2s infinite -0.4s ease-in-out; }
+
+.center-out-rects .rect:nth-last-child(5) {
+  -webkit-animation: rectScale 1.2s infinite -0.2s ease-in-out;
+          animation: rectScale 1.2s infinite -0.2s ease-in-out; }
+
+.fade-rects .rect {
+  vertical-align: -75%; }
+
+.fade-rects .rect:nth-last-child(1) {
+  -webkit-animation: rectFade 1.2s infinite 0s ease-in-out;
+          animation: rectFade 1.2s infinite 0s ease-in-out; }
+
+.fade-rects .rect:nth-last-child(2) {
+  -webkit-animation: rectFade 1.2s infinite -1.1s ease-in-out;
+          animation: rectFade 1.2s infinite -1.1s ease-in-out; }
+
+.fade-rects .rect:nth-last-child(3) {
+  -webkit-animation: rectFade 1.2s infinite -1s ease-in-out;
+          animation: rectFade 1.2s infinite -1s ease-in-out; }
+
+.fade-rects .rect:nth-last-child(4) {
+  -webkit-animation: rectFade 1.2s infinite -0.9s ease-in-out;
+          animation: rectFade 1.2s infinite -0.9s ease-in-out; }
+
+.fade-rects .rect:nth-last-child(5) {
+  -webkit-animation: rectFade 1.2s infinite -0.8s ease-in-out;
+          animation: rectFade 1.2s infinite -0.8s ease-in-out; }
+
+@-webkit-keyframes rectScale {
+  0% {
+    -webkit-transform: scaley(1);
+            transform: scaley(1); }
+  50% {
+    -webkit-transform: scaley(0.4);
+            transform: scaley(0.4); }
+  100% {
+    -webkit-transform: scaley(1);
+            transform: scaley(1); } }
+
+@keyframes rectScale {
+  0% {
+    -webkit-transform: scaley(1);
+            transform: scaley(1); }
+  50% {
+    -webkit-transform: scaley(0.4);
+            transform: scaley(0.4); }
+  100% {
+    -webkit-transform: scaley(1);
+            transform: scaley(1); } }
+
+@-webkit-keyframes rectFade {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaley(0.7);
+            transform: scaley(0.7); }
+  50% {
+    opacity: 0;
+    -webkit-transform: scaley(0.7);
+            transform: scaley(0.7); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaley(0.7);
+            transform: scaley(0.7); } }
+
+@keyframes rectFade {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaley(0.7);
+            transform: scaley(0.7); }
+  50% {
+    opacity: 0;
+    -webkit-transform: scaley(0.7);
+            transform: scaley(0.7); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaley(0.7);
+            transform: scaley(0.7); } }

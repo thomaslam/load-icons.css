@@ -1,12 +1,12 @@
 {
   "name": "load-icons-css",
-  "version": "0.0.0",
-  "homepage": "http://thomaslam.rocks/load-icons",
+  "version": "1.0.0",
+  "homepage": "http://thomaslam.rocks/bower_components/load-icons-css/index.html",
   "authors": [
     "Thomas Lam <tuananhlam95@gmail.com>"
   ],
   "description": "a collection of free pure css loading icons",
-  "main": "\"sass/load-icons.scss\"",
+  "main": "index.html",
   "keywords": [
     "loading",
     "icons",

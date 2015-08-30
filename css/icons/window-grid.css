@@ -1,0 +1,308 @@
+/**
+*
+* Set $your-color here
+*
+**/
+/**
+*
+* Set $color to $your-color, default is $red
+*
+**/
+/**
+*
+* MIXINS
+*
+**/
+/*=================================================
+=            Keyframes based on colors            =
+=================================================*/
+@-webkit-keyframes changeColor1 {
+  0% {
+    background-color: #f8799f; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #f8799f; } }
+@keyframes changeColor1 {
+  0% {
+    background-color: #f8799f; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #f8799f; } }
+
+@-webkit-keyframes changeColor2 {
+  0% {
+    background-color: #f4306c; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #f4306c; } }
+
+@keyframes changeColor2 {
+  0% {
+    background-color: #f4306c; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #f4306c; } }
+
+@-webkit-keyframes changeColor3 {
+  0% {
+    background-color: #E50C4E; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #E50C4E; } }
+
+@keyframes changeColor3 {
+  0% {
+    background-color: #E50C4E; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #E50C4E; } }
+
+@-webkit-keyframes changeColor4 {
+  0% {
+    background-color: #f4306c; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #f4306c; } }
+
+@keyframes changeColor4 {
+  0% {
+    background-color: #f4306c; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #f4306c; } }
+
+@-webkit-keyframes changeColor5 {
+  0% {
+    background-color: #E50C4E; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #E50C4E; } }
+
+@keyframes changeColor5 {
+  0% {
+    background-color: #E50C4E; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #E50C4E; } }
+
+@-webkit-keyframes changeColor6 {
+  0% {
+    background-color: #b5093d; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #b5093d; } }
+
+@keyframes changeColor6 {
+  0% {
+    background-color: #b5093d; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #b5093d; } }
+
+@-webkit-keyframes changeColor7 {
+  0% {
+    background-color: #E50C4E; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #E50C4E; } }
+
+@keyframes changeColor7 {
+  0% {
+    background-color: #E50C4E; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #E50C4E; } }
+
+@-webkit-keyframes changeColor8 {
+  0% {
+    background-color: #b5093d; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #b5093d; } }
+
+@keyframes changeColor8 {
+  0% {
+    background-color: #b5093d; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #b5093d; } }
+
+@-webkit-keyframes changeColor9 {
+  0% {
+    background-color: #6c0625; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #6c0625; } }
+
+@keyframes changeColor9 {
+  0% {
+    background-color: #6c0625; }
+  50% {
+    background-color: #FFF; }
+  100% {
+    background-color: #6c0625; } }
+
+/*=====  End of Keyframes based on colors  ======*/
+.grid, .random-grid, .pulse-grid, .wave-grid {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  text-align: center; }
+  .grid div, .random-grid div, .pulse-grid div, .wave-grid div {
+    background-color: #E50C4E;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    float: center;
+    border-radius: 100%;
+    -webkit-transition: background-color 1 ease;
+            transition: background-color 1 ease; }
+    .grid div:nth-child(1), .random-grid div:nth-child(1), .pulse-grid div:nth-child(1), .wave-grid div:nth-child(1) {
+      background-color: #f8799f; }
+    .grid div:nth-child(2), .random-grid div:nth-child(2), .pulse-grid div:nth-child(2), .wave-grid div:nth-child(2), .grid div:nth-child(4), .random-grid div:nth-child(4), .pulse-grid div:nth-child(4), .wave-grid div:nth-child(4) {
+      background-color: #f4306c; }
+    .grid div:nth-child(6), .random-grid div:nth-child(6), .pulse-grid div:nth-child(6), .wave-grid div:nth-child(6), .grid div:nth-child(8), .random-grid div:nth-child(8), .pulse-grid div:nth-child(8), .wave-grid div:nth-child(8) {
+      background-color: #b5093d; }
+    .grid div:nth-child(9), .random-grid div:nth-child(9), .pulse-grid div:nth-child(9), .wave-grid div:nth-child(9) {
+      background-color: #6c0625; }
+
+.random-grid div:nth-child(1) {
+  -webkit-animation: changeColor1 1.07s infinite 0.38s ease-in-out;
+          animation: changeColor1 1.07s infinite 0.38s ease-in-out; }
+
+.random-grid div:nth-child(2) {
+  -webkit-animation: changeColor2 1.19s infinite 0.12s ease-in-out;
+          animation: changeColor2 1.19s infinite 0.12s ease-in-out; }
+
+.random-grid div:nth-child(3) {
+  -webkit-animation: changeColor3 1.19s infinite 0.62s ease-in-out;
+          animation: changeColor3 1.19s infinite 0.62s ease-in-out; }
+
+.random-grid div:nth-child(4) {
+  -webkit-animation: changeColor4 0.64s infinite 0.05s ease-in-out;
+          animation: changeColor4 0.64s infinite 0.05s ease-in-out; }
+
+.random-grid div:nth-child(5) {
+  -webkit-animation: changeColor5 1.6s infinite 0.7s ease-in-out;
+          animation: changeColor5 1.6s infinite 0.7s ease-in-out; }
+
+.random-grid div:nth-child(6) {
+  -webkit-animation: changeColor6 0.88s infinite 0.46s ease-in-out;
+          animation: changeColor6 0.88s infinite 0.46s ease-in-out; }
+
+.random-grid div:nth-child(7) {
+  -webkit-animation: changeColor7 1.06s infinite 0.78s ease-in-out;
+          animation: changeColor7 1.06s infinite 0.78s ease-in-out; }
+
+.random-grid div:nth-child(8) {
+  -webkit-animation: changeColor8 0.98s infinite 0.27s ease-in-out;
+          animation: changeColor8 0.98s infinite 0.27s ease-in-out; }
+
+.random-grid div:nth-child(9) {
+  -webkit-animation: changeColor9 1.42s infinite 0.74s ease-in-out;
+          animation: changeColor9 1.42s infinite 0.74s ease-in-out; }
+
+.pulse-grid div:nth-child(1) {
+  -webkit-animation: scaleDelay 1.3s infinite 0s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0s ease-in-out; }
+
+.pulse-grid div:nth-child(2) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.1s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.1s ease-in-out; }
+
+.pulse-grid div:nth-child(3) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.2s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.2s ease-in-out; }
+
+.pulse-grid div:nth-child(4) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.1s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.1s ease-in-out; }
+
+.pulse-grid div:nth-child(5) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.2s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.2s ease-in-out; }
+
+.pulse-grid div:nth-child(6) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.3s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.3s ease-in-out; }
+
+.pulse-grid div:nth-child(7) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.2s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.2s ease-in-out; }
+
+.pulse-grid div:nth-child(8) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.3s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.3s ease-in-out; }
+
+.pulse-grid div:nth-child(9) {
+  -webkit-animation: scaleDelay 1.3s infinite 0.4s ease-in-out;
+          animation: scaleDelay 1.3s infinite 0.4s ease-in-out; }
+
+.wave-grid div:nth-child(1) {
+  -webkit-animation: changeColor1 1.3s infinite 0s ease-in-out;
+          animation: changeColor1 1.3s infinite 0s ease-in-out; }
+
+.wave-grid div:nth-child(2) {
+  -webkit-animation: changeColor2 1.3s infinite 0.1s ease-in-out;
+          animation: changeColor2 1.3s infinite 0.1s ease-in-out; }
+
+.wave-grid div:nth-child(3) {
+  -webkit-animation: changeColor3 1.3s infinite 0.2s ease-in-out;
+          animation: changeColor3 1.3s infinite 0.2s ease-in-out; }
+
+.wave-grid div:nth-child(4) {
+  -webkit-animation: changeColor4 1.3s infinite 0.1s ease-in-out;
+          animation: changeColor4 1.3s infinite 0.1s ease-in-out; }
+
+.wave-grid div:nth-child(5) {
+  -webkit-animation: changeColor5 1.3s infinite 0.2s ease-in-out;
+          animation: changeColor5 1.3s infinite 0.2s ease-in-out; }
+
+.wave-grid div:nth-child(6) {
+  -webkit-animation: changeColor6 1.3s infinite 0.3s ease-in-out;
+          animation: changeColor6 1.3s infinite 0.3s ease-in-out; }
+
+.wave-grid div:nth-child(7) {
+  -webkit-animation: changeColor7 1.3s infinite 0.2s ease-in-out;
+          animation: changeColor7 1.3s infinite 0.2s ease-in-out; }
+
+.wave-grid div:nth-child(8) {
+  -webkit-animation: changeColor8 1.3s infinite 0.3s ease-in-out;
+          animation: changeColor8 1.3s infinite 0.3s ease-in-out; }
+
+.wave-grid div:nth-child(9) {
+  -webkit-animation: changeColor9 1.3s infinite 0.4s ease-in-out;
+          animation: changeColor9 1.3s infinite 0.4s ease-in-out; }
+
+@-webkit-keyframes scaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1); }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); } }
+
+@keyframes scaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1); }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); } }
