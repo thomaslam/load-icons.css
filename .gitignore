@@ -1,6 +1,5 @@
 .gitignore
 
-zeroclipboard
 
 # Local server
 server.js
