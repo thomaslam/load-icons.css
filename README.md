@@ -40,7 +40,7 @@ Then include the appropriate div to where you want the load icon to appear. See 
 
 Go to `/sass/_shared.scss` (it's a Sass file). There are several color variables defined already, or you can create your own color (see below). Set `$color: $your-color`
 
-![Custom color](file:///Users/tlaminator/Documents/Web-design/load-icons-css/asset/load-icon-custom-color.gif)
+![Custom color](./asset/load-icon-custom-color.gif)
 
 Then compile Sass into CSS file. See [Sass](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 
