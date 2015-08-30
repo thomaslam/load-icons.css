@@ -1,7 +1,8 @@
 var gulp = require('gulp');
 
 var browserSync = require('browser-sync').create(),
-    autoprefixer = require('gulp-autoprefixer'),
+    autoprefixer = require('autoprefixer'),
+    postcss = require('gulp-postcss'),
     minifycss = require('gulp-minify-css'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass');
@@ -9,9 +10,11 @@ var browserSync = require('browser-sync').create(),
 gulp.task('sass-compile', function() {
   return gulp.src('./sass/load-icons.scss')
           .pipe(sass().on('error', sass.logError))
-          .pipe(autoprefixer({
-            browsers: ['last 2 versions', '> 1%', 'ie 8']
-          }))
+          .pipe(postcss([
+            autoprefixer({
+              browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']
+            })
+          ]))
           .pipe(gulp.dest('./css/'))
           .pipe(minifycss())
           .pipe(rename({suffix: '.min'}))

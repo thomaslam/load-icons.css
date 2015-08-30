@@ -1,6 +1,6 @@
 @import '../shared';
 
-@mixin hexagon($width: 80px, $color: $red){
+@mixin hexagon($width: 80px){
   // sqrt(3) / 2 = 0.866
   $height: $width * 0.866;
 
@@ -10,7 +10,7 @@
   margin: 0 auto;
   transform-origin: 0 0;
   transform: translateX($width/2) rotate(30deg);
-  
+
   .triangle{
     position: absolute;
     width: 0;
@@ -27,16 +27,24 @@
       }
       $deg: $deg + 60;
     }
+
     &:nth-child(5), &:nth-child(6){
       border-color: lighten($color,25%) transparent;
     }
     &:nth-child(2), &:nth-child(3){
-      border-color: darken($color,10%) transparent;
+      border-color: darken($color,20%) transparent;
     }
   }
 }
 
-@mixin hexTranslateKeyFrames($name, $degree) {
+
+
+/**
+ *
+ * hexKeyFrames mixin
+ *
+ */
+@mixin hexKeyFrames($name, $degree) {
   @keyframes #{$name} {
     @content;
   }
@@ -44,14 +52,30 @@
 
 $hex-degree: 0deg;
 @for $idx from 1 through 6 {
-  $hex-degree: $hex-degree + 60deg;
+  $hex-degree: $hex-degree + 60;
 
-  @include hexTranslateKeyFrames(hexTranslate#{$idx}, $hex-degree) {
+  @include hexKeyFrames(hexTranslate#{$idx}, $hex-degree) {
     0% { transform: rotateZ(0deg) rotate($hex-degree); }
     54.55%, 100% { transform: rotateZ(360deg) rotate($hex-degree); }
   }
+
+  @include hexKeyFrames(hexFlip#{$idx}, $hex-degree) {
+    0% { transform: rotate($hex-degree) rotate3d( 0.5, 0.866, 0, 90deg); opacity: 0; }
+    0.1% { transform: rotate($hex-degree) rotate3d( 0.5, 0.866, 0, 90deg); opacity: 1; }
+    14% { transform: rotate($hex-degree) rotate3d( 0.5, 0.866, 0, 0deg); }
+    50% { transform: rotate($hex-degree) rotate3d(-0.5, 0.866, 0, 0deg); }
+    63.99% { transform: rotate($hex-degree) rotate3d(-0.5, 0.866, 0, -90deg); opacity: 1; }
+    64%, 100% { transform: rotate($hex-degree) rotate3d(-0.5, 0.866, 0, -90deg); opacity: 0 }
+  }
 }
 
+
+
+/**
+ *
+ * hexAnimate mixin
+ *
+ */
 @mixin hexAnimate($style, $delay-order) {
   @for $i from 1 through 6 {
     .triangle:nth-child(#{$i}) {
@@ -67,6 +91,14 @@ $hex-degree: 0deg;
   text-align: center;
 }
 
+
+
+/**
+ *
+ * Fade Hex
+ *
+ */
+
 $order: (0s, -0.5s, -0.4s, -0.3s, -0.2s, -0.1s);
 .fade-hex {
   @include hexagon();
@@ -74,8 +106,15 @@ $order: (0s, -0.5s, -0.4s, -0.3s, -0.2s, -0.1s);
 }
 
 
+
+/**
+ *
+ * Rotate Hex
+ *
+ */
+
 $order2: (0s, 0.2s, 0.4s, 0.6s, 0.8s, 1s);
-.folding-hex {
+.rotate-hex {
   @include hexagon();
 
   @for $i from 1 through 6 {
@@ -85,8 +124,35 @@ $order2: (0s, 0.2s, 0.4s, 0.6s, 0.8s, 1s);
   }
 }
 
+
+
+/**
+ *
+ * Fold Hex
+ *
+ */
+$order3: (0s, -1.5s, -1.2s, -0.9s, -0.6s, -0.3s);
+.fold-hex {
+  @include hexagon();
+
+  @for $i from 1 through 6 {
+    .triangle:nth-child(#{$i}){
+      @include animate(hexFlip#{$i}, 1.8s, infinite, #{nth($order3, $i)}, linear);
+    }
+  }
+}
+
 @keyframes hexFade {
   0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+@keyframes flip {
+  0% { transform: rotate3d( 0.5, 0.866, 0, 90deg); opacity: 0; }
+  0.1% { transform: rotate3d( 0.5, 0.866, 0, 90deg); opacity: 1; }
+  14% { transform: rotate3d( 0.5, 0.866, 0, 0deg); }
+  50% { transform: rotate3d(-0.5, 0.866, 0, 0deg); }
+  63.99% { transform: rotate3d(-0.5, 0.866, 0, -90deg); opacity: 1; }
+  64%, 100% { transform: rotate3d(-0.5, 0.866, 0, -90deg); opacity: 0 }
 }

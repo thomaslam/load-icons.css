@@ -13,7 +13,7 @@
   }).zclip({
     path: 'http://www.steamdev.com/zclip/js/ZeroClipboard.swf',
     copy: function() {
-      return $(this).parent().parent().next().html();
+      return $(this).parent().parent().parent().find('.to-copy').html();
     },
     afterCopy: function() {
       console.log('COPIED');

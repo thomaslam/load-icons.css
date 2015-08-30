@@ -8,11 +8,14 @@
   "description": "a collection of free pure css loading icons",
   "main": "\"sass/load-icons.scss\"",
   "keywords": [
-    "\"loading\"",
-    "\"icons\"",
-    "\"css\"",
-    "\"pure\"",
-    "\"css3\""
+    "loading",
+    "icons",
+    "css",
+    "pure",
+    "css3",
+    "loaders",
+    "spinners",
+    "animations"
   ],
   "license": "MIT",
   "ignore": [
