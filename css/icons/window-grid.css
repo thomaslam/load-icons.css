@@ -184,40 +184,40 @@
       background-color: #6c0625; }
 
 .random-grid div:nth-child(1) {
-  -webkit-animation: changeColor1 1.07s infinite 0.38s ease-in-out;
-          animation: changeColor1 1.07s infinite 0.38s ease-in-out; }
+  -webkit-animation: changeColor1 1.58s infinite 0.26s ease-in-out;
+          animation: changeColor1 1.58s infinite 0.26s ease-in-out; }
 
 .random-grid div:nth-child(2) {
-  -webkit-animation: changeColor2 1.19s infinite 0.12s ease-in-out;
-          animation: changeColor2 1.19s infinite 0.12s ease-in-out; }
+  -webkit-animation: changeColor2 1.09s infinite 0.23s ease-in-out;
+          animation: changeColor2 1.09s infinite 0.23s ease-in-out; }
 
 .random-grid div:nth-child(3) {
-  -webkit-animation: changeColor3 1.19s infinite 0.62s ease-in-out;
-          animation: changeColor3 1.19s infinite 0.62s ease-in-out; }
+  -webkit-animation: changeColor3 0.62s infinite -0.11s ease-in-out;
+          animation: changeColor3 0.62s infinite -0.11s ease-in-out; }
 
 .random-grid div:nth-child(4) {
-  -webkit-animation: changeColor4 0.64s infinite 0.05s ease-in-out;
-          animation: changeColor4 0.64s infinite 0.05s ease-in-out; }
+  -webkit-animation: changeColor4 1.5s infinite 0.15s ease-in-out;
+          animation: changeColor4 1.5s infinite 0.15s ease-in-out; }
 
 .random-grid div:nth-child(5) {
-  -webkit-animation: changeColor5 1.6s infinite 0.7s ease-in-out;
-          animation: changeColor5 1.6s infinite 0.7s ease-in-out; }
+  -webkit-animation: changeColor5 1.21s infinite 0.14s ease-in-out;
+          animation: changeColor5 1.21s infinite 0.14s ease-in-out; }
 
 .random-grid div:nth-child(6) {
-  -webkit-animation: changeColor6 0.88s infinite 0.46s ease-in-out;
-          animation: changeColor6 0.88s infinite 0.46s ease-in-out; }
+  -webkit-animation: changeColor6 1.16s infinite 0.07s ease-in-out;
+          animation: changeColor6 1.16s infinite 0.07s ease-in-out; }
 
 .random-grid div:nth-child(7) {
-  -webkit-animation: changeColor7 1.06s infinite 0.78s ease-in-out;
-          animation: changeColor7 1.06s infinite 0.78s ease-in-out; }
+  -webkit-animation: changeColor7 1.6s infinite -0.17s ease-in-out;
+          animation: changeColor7 1.6s infinite -0.17s ease-in-out; }
 
 .random-grid div:nth-child(8) {
-  -webkit-animation: changeColor8 0.98s infinite 0.27s ease-in-out;
-          animation: changeColor8 0.98s infinite 0.27s ease-in-out; }
+  -webkit-animation: changeColor8 1.03s infinite 0.57s ease-in-out;
+          animation: changeColor8 1.03s infinite 0.57s ease-in-out; }
 
 .random-grid div:nth-child(9) {
-  -webkit-animation: changeColor9 1.42s infinite 0.74s ease-in-out;
-          animation: changeColor9 1.42s infinite 0.74s ease-in-out; }
+  -webkit-animation: changeColor9 0.88s infinite 0.14s ease-in-out;
+          animation: changeColor9 0.88s infinite 0.14s ease-in-out; }
 
 .pulse-grid div:nth-child(1) {
   -webkit-animation: scaleDelay 1.3s infinite 0s ease-in-out;
